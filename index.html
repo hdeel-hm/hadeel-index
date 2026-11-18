@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هديل | مستشارة حلول رقمية وأتمتة بيانات سلوك المستهلك</title>
+    <style>
+        :root {
+            --bg-dark: #090d16;
+            --card-bg: #111827;
+            --card-border: #1f2937;
+            --emerald: #10b981;
+            --gold: #f59e0b;
+            --blue: #3b82f6;
+            --red: #ef4444;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+        body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--card-border); }
+        .brand { font-size: 1.3rem; font-weight: 800; color: var(--emerald); letter-spacing: 0.5px; }
+        .nav-btn { background: rgba(16, 185, 129, 0.15); color: var(--emerald); border: 1px solid var(--emerald); padding: 8px 18px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+        .nav-btn:hover { background: var(--emerald); color: #000; }
+
+        .hero { text-align: center; padding: 60px 20px; background: radial-gradient(circle at top, rgba(16, 185, 129, 0.12), transparent 70%); border-radius: 20px; margin-top: 20px; border: 1px solid var(--card-border); }
+        .badge { display: inline-block; background: rgba(245, 158, 11, 0.15); color: var(--gold); padding: 6px 16px; border-radius: 50px; font-size: 0.85rem; font-weight: 700; margin-bottom: 15px; border: 1px solid rgba(245, 158, 11, 0.3); }
+        .hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; line-height: 1.3; }
+        .hero h2 { font-size: 1.1rem; color: var(--emerald); font-weight: 600; margin-bottom: 20px; }
+        .hero p { max-width: 720px; margin: 0 auto 30px; color: var(--text-muted); font-size: 1.05rem; }
+        .hero-actions { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { background: linear-gradient(135deg, #10b981, #059669); color: #000; padding: 14px 28px; border-radius: 10px; font-weight: 800; text-decoration: none; border: none; cursor: pointer; font-size: 1rem; transition: 0.3s; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3); }
+        .btn-secondary { background: var(--card-bg); color: var(--text-main); padding: 14px 28px; border-radius: 10px; font-weight: 700; text-decoration: none; border: 1px solid var(--card-border); cursor: pointer; font-size: 1rem; transition: 0.3s; }
+        .btn-secondary:hover { border-color: var(--emerald); }
+
+        .section { margin-top: 60px; }
+        .section-title { text-align: center; font-size: 1.7rem; font-weight: 800; margin-bottom: 10px; }
+        .section-sub { text-align: center; color: var(--text-muted); margin-bottom: 35px; font-size: 0.95rem; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; padding: 25px; transition: 0.3s; }
+        .card:hover { border-color: rgba(16, 185, 129, 0.4); }
+        @media (max-width: 600px) { .hero h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <div class="brand">HM | استخبارات السوق</div>
+        <a href="#request-modal" onclick="openModal('طلب استشارة / توكن')" class="nav-btn">تواصل للشركات</a>
+    </nav>
+
+    <header class="hero">
+        <span class="badge">Digital Solutions & Data Automation Consultant</span>
+        <h1>هديل | مستشارة حلول رقمية وأتمتة بيانات سلوك المستهلك</h1>
+        <h2>نحوّل البيانات السلوكية إلى قرارات بيعية محمية من التضليل والبوتات</h2>
+        <p>منهجية استشارية متكاملة تجمع بين اقتصاديات التسعير الحديثة وأتمتة تحليل سلوك المستهلك، لحماية ميزانيات الشركات واقتناص الفرص البيعية الحقيقية بدقة سحابية فائقة.</p>
+        <div class="hero-actions">
+            <a href="https://market-intelligence-saas-ya2k.onrender.com" target="_blank" class="btn-primary">الدخول إلى المنظومة السحابية</a>
+            <a href="#roi-calculator" class="btn-secondary">احسب عائد استثمارك (ROAS)</a>
+        </div>
+    </header>
+        <section class="section">
+        <h2 class="section-title">الأساس العلمي واقتصاديات التسعير الذكي</h2>
+        <p class="section-sub">مقتطفات تطبيقية من المرجع الاستشاري في هندسة المحتوى وكشف التضليل الرقمي</p>
+        
+        <div class="grid-2">
+            <div class="card">
+                <h3 style="color: var(--emerald); margin-bottom: 12px; font-size: 1.25rem;">كفاءة الإنفاق والعائد المالي (ROAS)</h3>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">لم يعد التسعير العشوائي المبني على حجم الحساب الجاف مقبولاً؛ بل يتأسس نموذجنا على التعويض الطردي وربط الإنفاق بالأداء الفعلي:</p>
+                <div style="background: rgba(16, 185, 129, 0.1); border-right: 4px solid var(--emerald); padding: 12px; border-radius: 6px; margin-bottom: 10px;">
+                    <strong style="color: #fff; font-size: 1.1rem;">7.65 دولار عائد مالي</strong>
+                    <span style="display: block; color: var(--text-muted); font-size: 0.85rem;">مقابل كل 1 دولار يُنفق بذكاء (Influencer Marketing Hub)</span>
+                </div>
+                <div style="background: rgba(59, 130, 246, 0.1); border-right: 4px solid var(--blue); padding: 12px; border-radius: 6px;">
+                    <strong style="color: #fff; font-size: 1.1rem;">تفوق بـ 11 مرة (11x ROI)</strong>
+                    <span style="display: block; color: var(--text-muted); font-size: 0.85rem;">مقارنة بالإعلانات الصورية التقليدية (Nielsen & TapInfluence)</span>
+                </div>
+            </div>
+
+            <div class="card" style="border-color: rgba(239, 68, 68, 0.3);">
+                <h3 style="color: var(--red); margin-bottom: 12px; font-size: 1.25rem;">درس كارثة مهرجان فاير (Fyre Festival)</h3>
+                <p style="color: var(--text-muted); margin-bottom: 15px;">تُثبت هذه الكارثة التجارية خطورة غياب التدقيق الاستشاري والاندفاع خلف الأرقام المليونية الزائفة والحسابات المضللة دون محتوى حقيقي.</p>
+                <ul style="color: var(--text-muted); padding-right: 20px; font-size: 0.92rem; line-height: 1.8;">
+                    <li><strong>المشكلة:</strong> ضخ ميزانيات ضخمة بناءً على أرقام ظاهرية غير مدققة.</li>
+                    <li><strong>الحل في منظومتنا:</strong> عزل البوتات المضللة آلياً واكتشاف الفجوات السعرية والأمنية قبل ضياع الميزانية.</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+            <section id="roi-calculator" class="section">
+        <h2 class="section-title">حاسبة العائد الاستثماري وكشف الهدر الإعلاني</h2>
+        <p class="section-sub">حرّك المؤشرات لاكتشاف العائد المتوقع وحجم الميزانية المحمية من البوتات</p>
+        
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <div style="margin-bottom: 20px;">
+                <label style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px;">
+                    <span>الميزانية التسويقية الشهرية ($):</span>
+                    <span id="budgetVal" style="color: var(--emerald); font-size: 1.2rem;">2,000 $</span>
+                </label>
+                <input type="range" id="budgetSlider" min="500" max="20000" step="500" value="2000" oninput="calculateROI()" style="width: 100%; accent-color: var(--emerald); cursor: pointer;">
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label style="display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 8px;">
+                    <span>نسبة التضليل والبوتات المتوقعة في السوق (%):</span>
+                    <span id="botVal" style="color: var(--red); font-size: 1.2rem;">30%</span>
+                </label>
+                <input type="range" id="botSlider" min="10" max="70" step="5" value="30" oninput="calculateROI()" style="width: 100%; accent-color: var(--red); cursor: pointer;">
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: center;">
+                <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid var(--emerald); padding: 15px; border-radius: 12px;">
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">العائد القياسي المستهدف (7.65x)</div>
+                    <div id="expectedReturn" style="font-size: 1.5rem; font-weight: 800; color: var(--emerald); margin-top: 5px;">15,300 $</div>
+                </div>
+                <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid var(--gold); padding: 15px; border-radius: 12px;">
+                    <div style="font-size: 0.85rem; color: var(--text-muted);">ميزانية مهدرة تم إنقاذها</div>
+                    <div id="savedWaste" style="font-size: 1.5rem; font-weight: 800; color: var(--gold); margin-top: 5px;">600 $</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">باقات الشركاء والوصول السحابي</h2>
+        <p class="section-sub">اختر الباقة المناسبة لحجم بيانات شركتك وابدأ بتحليل سلوك عملائك فوراً</p>
+        
+        <div class="grid-2">
+            <div class="card">
+                <span class="badge" style="background: rgba(59, 130, 246, 0.15); color: var(--blue); border-color: var(--blue);">للتقييم والتجربة</span>
+                <h3 style="font-size: 1.4rem; margin-bottom: 10px;">الباقة التجريبية (20%)</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">مثالية لاختبار دقة محرك الاستخبارات على عينة حقيقية من بيانات شركتك.</p>
+                <ul style="color: var(--text-muted); padding-right: 20px; margin-bottom: 25px; font-size: 0.92rem; line-height: 1.9;">
+                    <li>معالجة ذكية لـ <strong>20%</strong> من حجم ملف البيانات.</li>
+                    <li>كشف الحسابات الوهمية والبوتات المضللة.</li>
+                    <li>استخراج الفجوات السعرية والتشغيلية.</li>
+                </ul>
+                <button onclick="openModal('الباقة التجريبية (20%)')" class="btn-secondary" style="width: 100%;">اطلب مفتاح التجربة الآن</button>
+            </div>
+
+            <div class="card" style="border-color: var(--emerald); background: linear-gradient(180deg, rgba(16, 185, 129, 0.08), var(--card-bg));">
+                <span class="badge">الأكثر طلباً للشركات</span>
+                <h3 style="font-size: 1.4rem; margin-bottom: 10px;">باقة الشركات الاحترافية (100%)</h3>
+                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">وصول كامل غير مقيد مع تقارير تنفيذية مؤتمتة وتوصيات استشارية مخصصة.</p>
+                <ul style="color: var(--text-muted); padding-right: 20px; margin-bottom: 25px; font-size: 0.92rem; line-height: 1.9;">
+                    <li>معالجة كاملة لـ <strong>100%</strong> من سجلات الشركة.</li>
+                    <li>تصدير تقارير Excel عربية + تقارير PDF للطباعة.</li>
+                    <li>إرسال آلي للتقارير التنفيذية عبر البريد.</li>
+                </ul>
+                <button onclick="openModal('باقة الشركات الاحترافية (100%)')" class="btn-primary" style="width: 100%;">اشترك واطلب توكن VIP</button>
+            </div>
+        </div>
+    </section>
+        <footer style="text-align: center; padding: 40px 0 20px; margin-top: 60px; border-top: 1px solid var(--card-border); color: var(--text-muted); font-size: 0.9rem;">
+        <p>© 2026 هديل | مستشارة حلول رقمية وأتمتة بيانات سلوك المستهلك</p>
+    </footer>
+</div>
+
+<div id="requestModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 1000; align-items: center; justify-content: center; padding: 20px;">
+    <div class="card" style="max-width: 450px; width: 100%; position: relative; border-color: var(--emerald);">
+        <button onclick="closeModal()" style="position: absolute; left: 15px; top: 15px; background: none; border: none; color: var(--text-muted); font-size: 1.5rem; cursor: pointer;">×</button>
+        <h3 style="color: var(--emerald); margin-bottom: 10px;">طلب تفعيل رخصة / استشارة</h3>
+        <p id="selectedPlanText" style="color: var(--gold); font-size: 0.9rem; font-weight: bold; margin-bottom: 15px;"></p>
+        
+        <input type="text" id="clientName" placeholder="الاسم الكريم / المسمى الوظيفي" style="width: 100%; padding: 12px; margin-bottom: 12px; border-radius: 8px; border: 1px solid var(--card-border); background: var(--bg-dark); color: #fff;">
+        <input type="text" id="companyName" placeholder="اسم الشركة أو المؤسسة" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid var(--card-border); background: var(--bg-dark); color: #fff;">
+        
+        <button onclick="sendToLinkedIn()" class="btn-primary" style="width: 100%; margin-bottom: 10px;">نسخ الطلب والمتابعة عبر LinkedIn</button>
+        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">سيتم نسخ تفاصيل طلبك تلقائياً لتلصقها في رسالتي على LinkedIn</p>
+    </div>
+</div>
+
+<script>
+    function calculateROI() {
+        const budget = Number(document.getElementById('budgetSlider').value);
+        const botPercent = Number(document.getElementById('botSlider').value);
+        
+        document.getElementById('budgetVal').textContent = budget.toLocaleString('en-US') + ' $';
+        document.getElementById('botVal').textContent = botPercent + '%';
+        
+        const expectedReturn = Math.round(budget * 7.65);
+        const savedWaste = Math.round(budget * (botPercent / 100));
+        
+        document.getElementById('expectedReturn').textContent = expectedReturn.toLocaleString('en-US') + ' $';
+        document.getElementById('savedWaste').textContent = savedWaste.toLocaleString('en-US') + ' $';
+    }
+
+    let currentPlan = "";
+    function openModal(planName) {
+        currentPlan = planName;
+        document.getElementById('selectedPlanText').textContent = "الباقة المختارة: " + planName;
+        document.getElementById('requestModal').style.display = "flex";
+    }
+    function closeModal() {
+        document.getElementById('requestModal').style.display = "none";
+    }
+    function sendToLinkedIn() {
+        const name = document.getElementById('clientName').value.trim() || "شريك أعمال";
+        const company = document.getElementById('companyName').value.trim() || "شركة مهتمة";
+        
+        const messageText = `مرحباً أستاذة هديل،\nأنا ${name} من (${company}).\nأرغب في الحصول على: ${currentPlan} للوصول إلى منظومة استخبارات السوق.`;
+        
+        navigator.clipboard.writeText(messageText).then(() => {
+            alert("تم نسخ رسالة الطلب بنجاح! سيتم توجيهك الآن إلى حساب LinkedIn لإرسالها.");
+            window.open("https://www.linkedin.com/in/hadeel-hm-mohammad-99309241b", "_blank");
+            closeModal();
+        }).catch(() => {
+            window.open("https://www.linkedin.com/in/hadeel-hm-mohammad-99309241b", "_blank");
+        });
+    }
+</script>
+</body>
+</html>
